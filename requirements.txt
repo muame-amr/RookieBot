@@ -1,0 +1,13 @@
+aiohttp==3.7.4.post0
+async-timeout==3.0.1
+attrs==21.4.0
+certifi @ file:///C:/Windows/TEMP/abs_e9b7158a-aa56-4a5b-87b6-c00d295b01fanefpc8_o/croots/recipe/certifi_1655968940823/work/certifi
+chardet==4.0.0
+discord==1.7.3
+discord.py==1.7.3
+idna==3.3
+multidict==6.0.2
+python-dotenv==0.20.0
+typing_extensions==4.2.0
+wincertstore==0.2
+yarl==1.7.2
