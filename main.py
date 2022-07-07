@@ -1,23 +1,9 @@
-from multiprocessing.connection import Client
 import os
-import discord
 from dotenv import load_dotenv
-from pathlib import Path
+from classes.client import Client
 
 load_dotenv()
+token = os.getenv("TOKEN")
 
-client = discord.Client();
-
-@client.event
-async def on_ready():
-    print(f'We have logged in as {client.user}')
-
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-    
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!');
-    
-client.run(os.getenv('TOKEN'))
+client = Client(token);
+client.run()
